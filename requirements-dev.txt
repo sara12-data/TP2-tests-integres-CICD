@@ -3,7 +3,7 @@
 # Test et coverage
 pytest
 pytest-asyncio
-httpx==0.23.3
+httpx==0.27.2  #version vulnirable httpx==0.23.3
 pytest-cov
 coverage
 trio
@@ -14,8 +14,9 @@ ruff
 mypy
 
 # Sécurité
-safety==1.10.3
-typer==0.9.0
+#typer==0.9.0
+safety>=2.2.0 #version vulnirable safety==1.10.3
+
 
 # Optionnel: Docker utils si tu veux automatiser smoke tests
 docker
